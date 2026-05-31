@@ -4,20 +4,8 @@ import networkx as nx
 import numpy as np
 import sys
 
-# TEAM MEBMERS:
-# - Bartosz Pliszka
-# - Krzysztof Marcinkiewicz
-# - Utku Yoztyurk
 
 
-
-
-
- #FIRST PART OF CODE did -  Utku Yoztyurk
- #opening file, defining variables in PageRank function and preparing it (before the loops)
- #and one of the matrix reduction to constant (S * x_k)
- #Also priting of the results
- 
 
 
 # first of all we set important variables 
@@ -74,9 +62,6 @@ def PageRank(graph, m):
     print('PAGE RANK SIMULATION')
     print('=========================')
 
-
- #SECOND PART OF CODE DID - Bartosz Pliszka
- #Doing outer and inner loops, reduction of (1-m) * D * x_k part and checking if the results are stabilized enough to end the loop.
 
 
 #WE are starting the outerloop
@@ -147,9 +132,6 @@ def PageRank(graph, m):
     top_10_node_ids = [node for (node, rank) in sorted_ranks[:10]]
     return top_10_node_ids
 
-
-#THis part was done by Krzysztof Marcinkiewicz
-#Random surfer function from the begining to the printing
 
 def random_surfer(Graph, m, target_top_10):
     '''
